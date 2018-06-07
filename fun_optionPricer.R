@@ -21,10 +21,10 @@ optionPricer = function(Sym, RF, PriceRange)
         # Parameter for range of option price
         op_range = PriceRange
         #path
-        path_call = paste ("/home/ubuntu/csvFiles/calls/", SymbolName, ".csv", sep = "")
-        path_put = paste ("/home/ubuntu/csvFiles/puts/", SymbolName, ".csv", sep ="")
         
-
+        path_call = paste ("/opt/shiny-server/samples/sample-apps/Dashboard/csvFiles/calls/", SymbolName, ".csv", sep = "")
+        path_put = paste ("/opt/shiny-server/samples/sample-apps/Dashboard/csvFiles/puts/", SymbolName, ".csv", sep ="")
+        
         #BlackScholes Function to calculate the greeks
         #S: underlying stock price
         #X: strike
